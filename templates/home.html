@@ -9,17 +9,28 @@
       #banner {
         height: 360px;
         width : 100%;
+        object-fit:cover;
+        margin-bottom: 16px;
+        
         
       }
     </style>
     
   </head>
   <body>
+  {% include "nav.html"%}
+  <img class = "img-fluid" id="banner" src="https://samir-careers-website--samirsayyed5836.repl.co/static/banner.jpeg.jpg" height="320">
   <div class ="container">
   <h1 class = "text-center mt-2 mb-4">{{company_name}} Careers</h1>
-    <img class = "img-fluid" id="banner" src="https://samir-careers-website--samirsayyed5836.repl.co/static/banner.jpeg.jpg" height="320">
-    <h2 class = "text-center">About samir</h2>
+    
+  <div class= "row" style="margin-bottom:16px">
+    <div class = "col-md-6">
     <p class= "lead">At Samir careers, we believe in the power of diversity and inclusion to drive innovation, creativity, and success. Our commitment to fostering a diverse and inclusive workplace is at the heart of our culture. We understand that diversity goes beyond just demographics; it encompasses a wide range of backgrounds, experiences, perspectives, and ideas. We actively seek out talent from all walks of life, because we know that a diverse team leads to better problem-solving, increased productivity, and a more vibrant work environment.</p>
+    </div>
+      <div class = "d-none d-md-block col-md-6">
+      <img src="static/people.jpg" style="height:320px; border-radius:4px">
+      </div>
+  </div>
   <h2 class = "text-center mt-2 mb-4"> Job Openings</h2>  
   <p>
     <div>
@@ -30,9 +41,10 @@
   </p>
     
     <div class= "text-center">  
-      <button class="btn btn-primary">Contact Us</button>
-       <p class = "mt-4">Copyright 2023, Samir_sayyed</p>
+      <a class="btn btn-primary" href="mailto:samsayyed567@gmail.com?subject=Question%20about%20job%20opening&body=My%20Name%3A%20%3CYour%20Name%20here%3E%0D%0A%0D%0AMy%20Question%3A%20%3CEnter%20your%20Question%20here%3E%0D%0A%0D%0A%0D%0A">Contact Us</a>
+      
     <div/>
+    {% include "footer.html"%}
   </div>
   </body>
 </html>
