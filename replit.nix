@@ -1,4 +1,6 @@
 { pkgs }: {
-  deps = [
+  deps = [ pkgs.bashInteractive
+        python39Full.out
+
   ];
 }
